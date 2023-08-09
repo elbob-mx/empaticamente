@@ -17,7 +17,8 @@ content: ["./*.html"],
       colors: {
         offwhite: '#F2F2F2',
         offblack: '#161616',
-        morado1: '#5B156E',
+        morado1: '#59156D',
+        morado2: '#230E2D'
       }
     },
   },
