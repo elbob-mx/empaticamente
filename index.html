@@ -21,33 +21,37 @@
     <link rel="shortcut icon" href="#" type="image/x-icon" />
 </head>
 
-<body class="box-border flex flex-col w-screen overflow-x-hidden antialiased bg-morado2">
+<body class="box-border overflow-x-hidden antialiased">
 
+    <!-- HERO BANNER -->
     <div class="relative flex flex-col">
         <img src="./assets/img/bkg/bkg-test.jpg" alt="fondo dummy" class="object-cover w-screen h-screen">
 
+        <!-- NAV BAR -->
         <div
-            class="xs:hidden absolute lg:flex flex-row items-center justify-around flex-grow w-screen gap-16 py-2 text-lg font-semibold text-center list-none bg-transparent z-999 font-montserrat border-b-[0.5px] border-slate-400">
+            class="xs:hidden z-999 bg-morado2 absolute lg:flex flex-row items-center justify-around flex-grow w-screen gap-16 py-2 text-lg font-semibold text-center list-none font-montserrat border-b-[0.5px] border-slate-400">
             <a href="index.html">
-                <img src="./assets/img/logo/logo-emp.svg" alt="logo empaticamente" title="logo empaticamente"
-                    class="h-20"></a>
+                <img src="./assets/img/logo/logo-dark.svg" alt="logo empaticamente" title="empaticamente | psicólogos especializados"
+                    class="h-20 duration-1000 hover:-translate-y-1"></a>
             <ul class="flex flex-row">
-                <li class="pr-20 duration-500 text-slate-600 hover:text-morado1 hover:-translate-y-1"><a
+                <li class="pr-20 duration-1000 text-offwhite hover:text-morado0 hover:-translate-y-1"><a
                         href="index.html">Inicio</a></li>
-                <li class="pr-20 duration-500 text-slate-600 hover:text-morado1 hover:-translate-y-1"><a
+                <li class="pr-20 duration-1000 text-offwhite hover:text-morado0 hover:-translate-y-1"><a
                         href="nosotros.html">Nosotros</a></li>
-                <li class="pr-20 duration-500 text-slate-600 hover:text-morado1 hover:-translate-y-1"><a
+                <li class="pr-20 duration-1000 text-offwhite hover:text-morado0 hover:-translate-y-1"><a
                         href="servicios.html">Servicios</a></li>
-                <li class="pr-20 duration-500 text-slate-600 hover:text-morado1 hover:-translate-y-1"><a
+                <li class="pr-20 duration-1000 text-offwhite hover:text-morado0 hover:-translate-y-1"><a
                         href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 
+        <!-- DESKTOP FLOAT CARDS -->
+        <section class="xs:hidden lg:block">
         <div
             class="bg-gradient-to-b from-morado1/70 to-transparent hover:backdrop-blur-md rounded-xl absolute flex w-[27%] hover:h-[68%] h-[40%] hover:-translate-y-2 duration-1000 flex-col top-[28%] right-[32%]">
-            <h2 class="pt-10 font-semibold text-left text-7xl px-7 font-barlow text-offwhite">Psicólogos especializados</h2>
+            <h2 class="pt-10 font-semibold text-left duration-1000 ease-in-out text-7xl px-7 font-barlow text-offwhite hover:-translate-y-2">Psicólogos especializados</h2>
             <h2
-                class="pt-6 text-sm antialiased font-medium leading-relaxed text-left duration-500 px-7 hover:text-offwhite font-montserrat text-slate-800">
+                class="pt-6 text-sm antialiased font-medium leading-relaxed text-left duration-500 px-7 hover:text-offwhite font-montserrat text-offblack">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quidem amet deserunt id cupiditate eos
                 blanditiis ut debitis optio, obcaecati porro necessitatibus impedit ullam sint fugit perferendis ad,
                 alias officia velit ducimus ea. Nulla, optio voluptatum. Amet, consectetur neque nisi fuga.</h2>
@@ -55,7 +59,7 @@
 
         <div
             class="items-center bg-gradient-to-b hover:from-morado1/70 from-morado1/30 to-transparent rounded-xl absolute flex w-[20%] hover:h-[40%] hover:-translate-y-2 duration-1000 h-[35%] flex-col top-[53%] right-[10%] hover:backdrop-blur-md text-morado2 hover:text-offwhite">
-            <p class="pt-6 pb-6 text-base antialiased font-medium leading-relaxed duration-100 px-7 font-montserrat text-slate-800">
+            <p class="pt-6 pb-6 text-base antialiased font-medium leading-relaxed duration-1000 px-7 font-montserrat text-offblack hover:text-offwhite">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quidem amet deserunt id cupiditate eos
                 blanditiis ut debitis optio.</p>
 
@@ -63,23 +67,37 @@
                 class="flex p-3 font-semibold tracking-widest bg-morado1 text-offwhite font-montserrat hover:bg-morado2 hover:shadow-morado1/50 hover:shadow-lg w-[50%] text-center rounded-lg items-center justify-center hover:-translate-y-2 duration-1000 hover:drop-shadow-offwhite"><a
                     href="#2">conócenos</button></a>
         </div>
+    </section>
+    
+    <!-- MOBILE FLOAT CARDS -->
+    <section class="absolute grid w-screen h-screen grid-flow-row grid-rows-4 xs:block lg:hidden">
+        <div class="row-span-1 m-auto">
+        <img src="./assets/img/logo/logo-light.svg" alt="logo empaticamente" class="h-44">
+        </div>
+        
+        <div class="row-span-1 m-auto">
+            <h3 class="text-4xl font-bold font-barlow text-morado1">Psicólogos especializados</h3>
+            <p class="pt-4 text-sm font-medium top-11 font-montserrat text-morado2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </section>
 
     </div>
 
+    <!-- MAIN SECTION - INICIO -->
     <div id="2"
-        class="grid justify-center w-screen h-screen grid-flow-col grid-cols-3 grid-rows-4 p-20 align-middle rounded-xl border-offwhite bg-morado2">
-        <img src="./assets/img/bkg/bkg-test.jpg" alt="" class="relative object-cover h-full col-span-1 row-span-4 px-10 overflow-hidden origin-left rounded-2xl">
-        <div class="col-span-2 row-span-4 p-20 bg-morado1 rounded-xl backdrop-blur-md">
-            <h1 class="pb-6 text-6xl font-semibold text-offwhite font-barlow">Lorem, ipsum. <i
-                    class="fa-solid fa-brain fa-fade" style="color: #f2f2f2;"></i></h1>
+        class="grid justify-center w-full h-screen gap-10 p-20 lg:grid-flow-col lg:grid-cols-3 lg:grid-rows-4 border-offwhite bg-morado2">
+
+        <img src="./assets/img/bkg/bkg-test-flower.jpg" alt="" class="object-cover h-full col-span-1 row-span-4 overflow-hidden duration-1000 origin-left border-b-8 hover:border-b-0 border-morado1 rounded-3xl">
+
+        <div class="flex flex-col p-8 border-b-8 lg:col-span-2 lg:row-span-4 bg-morado3 rounded-3xl backdrop-blur-md border-morado1">
+            <h1 class="pb-6 text-6xl font-semibold text-offwhite font-barlow border-b-[1px]">Lorem, ipsum.</h1>
             <p class="font-medium leading-loose tracking-wider text-offwhite font-montserrat">Lorem ipsum dolor sit,
                 amet consectetur adipisicing elit. Aspernatur, voluptatem ad? Magnam laudantium et sapiente, quod est
                 error ipsa ullam aperiam aut modi excepturi qui sunt ab officia necessitatibus. Nesciunt repellendus
                 cumque autem voluptatibus facere natus enim eius, sed optio expedita voluptate officiis suscipit ipsum
                 veritatis commodi.</p>
 
-            <h1 class="py-10 text-6xl font-semibold text-offwhite font-barlow">Lorem, ipsum. <i
-                    class="fa-solid fa-brain fa-fade" style="color: #f2f2f2;"></i></h1>
+            <h1 class="pb-6 pt-12 text-6xl font-semibold text-offwhite font-barlow border-b-[1px]">Magnam laudantium</h1>
             <p class="font-medium leading-loose tracking-wider text-offwhite font-montserrat">Lorem ipsum dolor sit,
                 amet consectetur adipisicing elit. Aspernatur, voluptatem ad? Magnam laudantium et sapiente, quod est
                 error ipsa ullam aperiam aut modi excepturi qui sunt ab officia necessitatibus. Nesciunt repellendus
@@ -87,12 +105,10 @@
                 veritatis commodi.</p>
 
             <button
-                class="px-6 py-2 mx-auto my-5 mt-3 font-bold text-center duration-500 rounded-lg font-montserrat text-morado1 bg-offwhite hover:bg-morado2 hover:text-offwhite hover:drop-shadow-lg"><a
+                class="px-10 py-3 m-auto my-10 font-bold text-center duration-500 rounded-lg font-montserrat text-morado1 bg-offwhite hover:bg-morado2 hover:text-offwhite hover:drop-shadow-lg"><a
                     href="#3">terapeutas</a></button>
         </div>
     </div>
 
-    </div>
 </body>
-
 </html>
