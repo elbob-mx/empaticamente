@@ -1174,6 +1174,11 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-\[\#59156D\] {
+  --tw-text-opacity: 1;
+  color: rgb(89 21 109 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
