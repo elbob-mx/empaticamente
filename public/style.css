@@ -620,6 +620,10 @@ video {
   width: 83.333333%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
