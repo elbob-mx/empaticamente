@@ -17,42 +17,38 @@
 
 <body class="w-full h-full bg-offWhite">
 
+    <!-- LANDING MENU -->
     <section class="grid items-center w-full h-screen grid-flow-col grid-cols-2 bg-verdeEmp">
         <div class="flex justify-center h-full col-span-1 bg-offWhite">
             <img src="./assets/img/logo/logoEmp-fondoBlanco.svg" class="w-5/6" alt="logo empaticamente">
         </div>
-        <div class="z-50 flex flex-col flex-wrap content-center flex-grow col-span-1 gap-16 text-6xl font-barlowCon">
 
-            <a href="#" class="duration-500 text-offWhite hover:text-verdeEmpDark">inicio</a>
-            <a href="#" class="duration-500 text-offWhite hover:text-verdeEmpDark">conócenos</a>
-            <a href="#" class="duration-500 text-offWhite hover:text-verdeEmpDark">servicios</a>
-            <a href="contacto.html" class="duration-500 text-offWhite hover:text-verdeEmpDark">contáctanos</a>
+        <!-- VERTICAL NAVBAR -->
+        <div class="flex flex-col flex-wrap content-center flex-grow col-span-1 text-6xl gap-14 font-barlowCon">
 
-            <div>
+            <!-- MENU NAVBAR -->
+            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">inicio</a>
+            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">conócenos</a>
+            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">servicios</a>
+            <a href="contacto.html"
+                class="duration-500 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">contáctanos</a>
 
-                <!--  <a href="https://maps.app.goo.gl/CGKLtxazcQUm3ATy9">
-                    <p class="pb-6 text-2xl text-verdeEmpDark"><i
-                            class="text-2xl text-offBlack fa-solid fa-location-dot"></i> Av
-                        Montevideo
-                        2507, Providencia, 44630 Guadalajara, Jal.
-                    </p>
-                </a>  -->
-
-                <div class="flex flex-row justify-start gap-16 text-4xl">
-                    <a href=""><i
-                            class="duration-500 text-offWhite hover:text-verdeEmpDark fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/empaticamentemx"><i
-                            class="duration-500 text-offWhite hover:text-verdeEmpDark fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com/empaticamentemx/"><i
-                            class="duration-500 text-offWhite hover:text-verdeEmpDark fa-brands fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@empaticamente4"><i
-                            class="duration-500 text-offWhite hover:text-verdeEmpDark fa-brands fa-tiktok"></i></a>
-                </div>
+            <!-- SOCIAL NETWORKS -->
+            <div class="flex flex-row justify-start gap-16 text-5xl hover:drop-shadow-md">
+                <a href="#" class="duration-700 hover:-translate-y-1"><i
+                        class="duration-700 text-offWhite hover:text-green-600 fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/empaticamentemx" class="duration-700 hover:-translate-y-1"><i
+                        class="duration-700 text-offWhite hover:text-blue-600 fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/empaticamentemx/" class="duration-700 hover:-translate-y-1"><i
+                        class="duration-700 text-offWhite hover:text-[#F27A1D] fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@empaticamente4" class="duration-700 hover:-translate-y-1"><i
+                        class="duration-700 text-offWhite hover:text-[#53E9F4] fa-brands fa-tiktok"></i></a>
             </div>
         </div>
     </section>
 
-    <nav class="sticky top-0 w-full px-20 py-4 bg-verdeEmp">
+    <!-- REGULAR NAVBAR -->
+    <nav class="sticky top-0 w-full px-20 py-4 bg-verdeEmpDark">
         <div class="flex items-center justify-between">
             <img src="/assets/img/logo/logoEmp-fondoVerde.svg" alt="logo Empáticamente" class="w-32">
             <ul class="flex-row hidden gap-12 text-3xl font-medium laptop:flex font-barlowCon">
@@ -63,6 +59,7 @@
             </ul>
         </div>
     </nav>
+    <!-- END REGULAR NAVBAR -->
 
     <h1 class="w-full p-6 text-5xl font-barlowCon bg-offWhite">Empáticamente</h1>
 
