@@ -1092,6 +1092,10 @@ video {
 }
 
 @media (min-width: 1365px) {
+  .hd\:hidden {
+    display: none;
+  }
+
   .hd\:gap-12 {
     gap: 3rem;
   }
@@ -1114,5 +1118,11 @@ video {
   .hd\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fhd\:hidden {
+    display: none;
   }
 }
