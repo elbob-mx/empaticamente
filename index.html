@@ -23,13 +23,14 @@
     <section
         class="z-40 grid items-center w-full h-screen grid-flow-row grid-cols-1 laptop:grid-flow-col laptop:grid-cols-2 bg-verdeEmp">
         <div class="flex justify-center h-full col-span-1 bg-offWhite">
-            <img src="./assets/img/logo/logoEmp-fondoBlanco.svg" class="w-10/12 h-full laptop:h-full laptop:w-5/6"
+            <img src="./assets/img/logo/logoEmp-fondoBlanco.svg"
+                class="w-10/12 h-full tablet:w-1/2 vertIpadMini:w-3/4 laptop:h-full laptop:w-5/6"
                 alt="logo empaticamente">
         </div>
 
         <!-- VERTICAL NAVBAR -->
         <div
-            class="flex flex-col flex-wrap content-center flex-grow col-span-1 gap-2 py-0 text-2xl tablet:w-max laptop:w-full tablet:pl-24 laptop:pl-0 mobile:text-2xl mobile:gap-4 laptop:text-6xl laptop:gap-14 font-barlowCon">
+            class="flex flex-col flex-wrap content-center flex-grow col-span-1 gap-2 py-0 text-2xl tablet:text-4xl tablet:w-max laptop:w-full tablet:pl-24 laptop:pl-0 hd:gap-12 hd:text-5xl tablet:gap-4 mobile:text-2xl mobile:gap-4 vertIpadMini:text-4xl vertIpadMini:gap-12 laptop:text-4xl laptop:gap-8 font-barlowCon">
             <!-- MENU NAVBAR -->
             <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">inicio</a>
             <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">conócenos</a>
@@ -39,7 +40,7 @@
 
             <!-- SOCIAL NETWORKS -->
             <div
-                class="flex flex-row justify-start gap-12 pt-5 text-2xl laptop:gap-16 laptop:text-5xl hover:drop-shadow-md">
+                class="flex flex-row justify-start gap-12 pt-5 text-2xl laptop:gap-16 vertIpadMini:text-4xl tablet:gap-14 tablet:text-3xl laptop:text-4xl hd:text-5xl hover:drop-shadow-md">
                 <a href="#" class="duration-700 hover:-translate-y-1"><i
                         class="duration-700 text-offWhite hover:text-green-600 fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/empaticamentemx" class="duration-700 hover:-translate-y-1"><i
@@ -54,21 +55,24 @@
 
     <!-- REGULAR NAVBAR -->
     <main class="z-50">
-        <nav class="sticky top-0 w-full px-4 py-1 laptop:px-20 laptop:py-1 bg-verdeEmpDark">
-            <div class="flex items-center justify-start laptop:justify-between">
-                <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo Empáticamente" class="w-20 laptop:w-32">
-                <ul class="flex-row hidden gap-20 text-3xl font-normal laptop:flex font-barlowCon">
+        <nav
+            class="sticky top-0 w-full px-4 py-1 laptop:px-10 hd:px-20 hd:py-3 tablet:py-4 tablet:px-8 laptop:py-2 bg-verdeEmpDark">
+            <div class="flex items-center justify-between laptop:justify-between">
+                <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo Empáticamente" class="w-20 laptop:w-28">
+                <ul
+                    class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-2xl laptop:flex font-barlowCon">
                     <li><a href="#" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
                     <li><a href="#" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
                     <li><a href="#" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
                     <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
                     </li>
                 </ul>
+                <i id="mobileMenu" class="tablet:text-3xl fas fa-bars text-offWhite laptop:hidden"></i>
             </div>
         </nav>
         <!-- END REGULAR NAVBAR -->
 
-        <h1 class="w-full p-6 text-5xl font-barlowCon bg-offWhite">Empáticamente</h1>
+        <h1 class="w-full p-6 text-5xl mt-14 font-barlowCon bg-offWhite">Empáticamente</h1>
 
         <p class="p-6 text-lg laptop:text-2xl font-barlow"><i class="fa-solid fa-bone fa-2xl"></i>
             Lorem ipsum dolor sit
@@ -88,45 +92,46 @@
         </figure>
 
         <p class="p-6 text-lg laptop:text-2xl font-barlow"><i class="fa-solid fa-bone fa-2xl"></i>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur provident dolorum necessitatibus nisi
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur provident dolorum necessitatibus
+            nisi
             laboriosam sequi debitis esse dolore ducimus iste eum at ipsam, voluptatibus ex. Alias, consectetur
             sapiente!
             Consequatur voluptates doloribus recusandae voluptatibus sapiente explicabo!
         </p>
 
-        <!-- FOOTER -->
-        <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
-            <div>
-                <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo empaticamente"
-                    class="w-16 pb-10 laptop:w-24">
-                <ul>
-                    <a href="#">
-                        <li
-                            class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
-                            inicio</li>
-                    </a>
-                    <a href="#">
-                        <li
-                            class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
-                            conócenos</li>
-                    </a>
-                    <a href="#">
-                        <li
-                            class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
-                            servicios</li>
-                    </a>
-                    <a href="contacto.html">
-                        <li
-                            class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
-                            contáctanos</li>
-                    </a>
-                </ul>
-                <div class="self-end pt-10 text-xs font-barlow text-offWhite">Lorem ipsum dolor sit amet consectetur
-                    adipisicing.</div>
-            </div>
-        </footer>
-
     </main>
+
+    <!-- FOOTER -->
+    <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
+        <div>
+            <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-24">
+            <ul>
+                <a href="#">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        inicio</li>
+                </a>
+                <a href="#">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        conócenos</li>
+                </a>
+                <a href="#">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        servicios</li>
+                </a>
+                <a href="contacto.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        contáctanos</li>
+                </a>
+            </ul>
+            <div class="self-end pt-10 text-xs font-barlow text-offWhite">Lorem ipsum dolor sit amet consectetur
+                adipisicing.</div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
