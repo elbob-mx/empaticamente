@@ -32,11 +32,13 @@
         <div
             class="flex flex-col flex-wrap content-center flex-grow col-span-1 gap-2 py-0 text-2xl tablet:text-4xl tablet:w-max laptop:w-full tablet:pl-24 laptop:pl-0 hd:gap-12 hd:text-5xl tablet:gap-4 mobile:text-2xl mobile:gap-4 vertIpadMini:text-4xl vertIpadMini:gap-12 laptop:text-4xl laptop:gap-8 font-barlowCon">
             <!-- MENU NAVBAR -->
-            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">inicio</a>
-            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">conócenos</a>
-            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">servicios</a>
+            <a href="#" class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">inicio</a>
+            <a href="#"
+                class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">conócenos</a>
+            <a href="#"
+                class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">servicios</a>
             <a href="contacto.html"
-                class="duration-500 text-offWhite hover:text-verdeEmpDark hover:translate-x-3">contáctanos</a>
+                class="duration-500 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">contáctanos</a>
 
             <!-- SOCIAL NETWORKS -->
             <div
@@ -56,7 +58,7 @@
     <!-- REGULAR NAVBAR -->
     <main class="z-50">
         <nav
-            class="sticky top-0 w-full px-4 py-1 laptop:px-10 hd:px-20 hd:py-3 tablet:py-4 tablet:px-8 laptop:py-2 bg-verdeEmpDark">
+            class="sticky top-0 w-full px-4 py-1 shadow-lg laptop:px-10 hd:px-20 hd:py-3 tablet:py-4 tablet:px-8 laptop:py-2 bg-verdeEmpDark">
             <div class="flex items-center justify-between laptop:justify-between">
                 <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-20 laptop:w-28">
                 <ul
@@ -67,48 +69,54 @@
                     <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
                     </li>
                 </ul>
-                <a href="#"><i id="mobileMenu" class="tablet:text-3xl fas fa-bars text-offWhite laptop:hidden"></i></a>
+                <a href="#" class="laptop:hidden"><i id="mobileMenu"
+                        class="tablet:text-3xl fas fa-bars text-offWhite"></i></a>
             </div>
         </nav>
         <!-- END REGULAR NAVBAR -->
 
-        <div class="p-6 laptop:p-12">
-            <div class="my-12">
-                <h1 class="py-4 text-5xl font-barlowCon bg-offWhite">Empáticamente</h1>
+        <figure class="flex justify-center w-full">
+            <picture>
+                <img src="./assets/img/bkg/bkg-test.jpg" alt="fondo test" class="object-cover p-6 laptop:p-12">
+            </picture>
+        </figure>
 
-                <p class="py-4 text-base font-semibold laptop:text-lg font-barlow">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem architecto doloribus tempora
-                    modi unde.</p>
+        <div class="px-6 my-6 laptop:p-12">
+            <h1 class="py-4 text-5xl laptop:text-6xl font-barlowCon bg-offWhite text-offBlack">Empáticamente</h1>
 
-                <div class="flex flex-row gap-2 laptop:gap-4">
+            <p class="py-4 text-lg font-semibold laptop:text-xl font-barlow text-verdeEmpDark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem architecto doloribus tempora
+                modi unde.</p>
+
+            <div class="w-full mt-6">
+                <div class="flex flex-row gap-4">
                     <h2
-                        class="w-10/12 p-3 text-3xl italic align-middle rounded-md laptop:w-11/12 bg-verdeEmp font-barlowCon text-offBlack">
-                        <i id="mobileMenu" class="text-base align-middle fas fa-chevron-right text-offBlack"></i> Lorem,
-                        ipsum
-                        dolor.
+                        class="w-full p-4 text-2xl font-semibold align-middle rounded-md laptop:text-4xl bg-verdeEmpClaro font-barlowCon text-offBlack">
+                        Lorem, ipsum dolor.
                     </h2>
-                    <p class="flex items-center justify-center w-2/12 p-3 rounded-md laptop:w-1/12 bg-verdeEmpDark"><i
-                            class="text-2xl fas fa-hand text-offWhite"></i>
+                    <p
+                        class="items-center justify-center hidden w-full p-4 rounded-md laptop:flex laptop:w-auto bg-verdeEmpMid">
+                        <i class="text-2xl fas fa-smile text-offWhite"></i>
                     </p>
                 </div>
             </div>
 
-            <figure class="flex justify-center w-full">
-                <picture>
-                    <img src="./assets/img/bkg/bkg-test.jpg" alt="fondo test"
-                        class="object-cover rounded-md laptop:rounded-2xl">
-                </picture>
-            </figure>
-
-            <div class="my-12">
-                <p class="text-base laptop:text-lg font-barlow">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur provident dolorum
-                    necessitatibus
-                    nisi
-                    laboriosam sequi debitis esse dolore ducimus iste eum at ipsam, voluptatibus ex. Alias, consectetur
-                    sapiente!
-                    Consequatur voluptates doloribus recusandae voluptatibus sapiente explicabo!
+            <div
+                class="grid grid-flow-row grid-cols-1 my-4 tablet:px-12 tablet:py-6 laptop:p-12 laptop:grid-flow-col laptop:grid-cols-4">
+                <p class="col-span-3 pb-6 text-lg laptop:pb-0 laptop:mr-20 laptop:text-lg font-barlow text-offBlack">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis reprehenderit quis nemo at
+                    commodi nobis nostrum itaque aperiam tempora accusantium qui quidem, nam sequi aspernatur placeat
+                    consectetur sint aliquam id? Autem eos deleniti explicabo sunt. Repudiandae est nam nostrum quia
+                    dicta debitis esse recusandae blanditiis, atque, odit, voluptatibus laborum quidem! Provident ex
+                    error praesentium voluptas illo possimus a quidem veritatis. Nulla cum eaque consequatur enim sit
+                    maiores impedit! Minus amet ratione doloremque, numquam ab dolor illum? Soluta odit veniam labore
+                    iure laboriosam sunt repellendus illo, explicabo, suscipit similique nisi velit accusamus, ea
+                    impedit reprehenderit? Neque, maxime vero. Sit voluptatibus, iste quibusdam culpa recusandae sequi.
+                    Ducimus accusamus veniam accusantium quod nihil veritatis impedit sequi sed tempora, excepturi, quam
+                    tenetur sit atque.
                 </p>
+                <img src="./assets/img/bkg/bkg-test-flower.jpg" alt="flor"
+                    class="object-cover w-full col-span-1 rounded-lg h-1/2 laptop:h-full">
             </div>
         </div>
 
@@ -117,7 +125,7 @@
     <!-- FOOTER -->
     <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
         <div>
-            <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-24">
+            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-24">
             <ul>
                 <a href="#">
                     <li

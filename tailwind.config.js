@@ -25,6 +25,8 @@ module.exports = {
         offWhite: "#f2f2f2",
         offBlack: "#181818",
         verdeEmp: "#A2ADA2",
+        verdeEmpClaro: "#DFE2DF",
+        verdeEmpMid: "#7D8C7D",
         verdeEmpDark: "#566156",
       },
     },
