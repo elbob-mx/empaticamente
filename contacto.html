@@ -17,17 +17,25 @@
 
 <body class="w-full h-full bg-offWhite">
 
-    <nav class="sticky top-0 w-full px-20 py-4 shadow-lg bg-verdeEmp">
-        <div class="flex items-center justify-between">
-            <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo Empáticamente" class="w-32">
-            <ul class="flex-row hidden gap-12 text-3xl font-medium laptop:flex font-barlowCon">
-                <li><a href="index.html" class="duration-500 text-offWhite hover:text-verdeEmpDark">inicio</a></li>
-                <li><a href="#" class="duration-500 text-offWhite hover:text-verdeEmpDark">conócenos</a></li>
-                <li><a href="#" class="duration-500 text-offWhite hover:text-verdeEmpDark">servicios</a></li>
-                <li><a href="#" class="duration-500 text-offWhite hover:text-verdeEmpDark">contacto</a></li>
+    <!-- REGULAR NAVBAR -->
+    <nav
+        class="sticky top-0 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
+        <div class="flex items-center justify-between laptop:justify-between">
+            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
+            <ul
+                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-2xl laptop:flex font-barlowCon">
+                <li><a href="index.html" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
+                <li><a href="#" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
+                <li><a href="#" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
+                <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
+                </li>
             </ul>
+            <a href="#" class="laptop:hidden"><i id="mobileMenu"
+                    class="tablet:text-3xl fas fa-bars text-offWhite"></i></a>
         </div>
     </nav>
+    <!-- END REGULAR NAVBAR -->
+
 
 
     <section class="grid w-full grid-cols-1 gap-10 p-8 laptop:mt-20 laptop:grid-cols-2 laptop:p-14 font-barlow">
@@ -103,26 +111,26 @@
     <!-- FOOTER -->
     <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
         <div>
-            <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-24">
+            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-16">
             <ul>
                 <a href="#">
                     <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                         inicio</li>
                 </a>
                 <a href="#">
                     <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                         conócenos</li>
                 </a>
                 <a href="#">
                     <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                         servicios</li>
                 </a>
-                <a href="#">
+                <a href="contacto.html">
                     <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlowCon hover:text-amber-400 hover:translate-x-2">
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                         contáctanos</li>
                 </a>
             </ul>
@@ -130,7 +138,6 @@
                 adipisicing.</div>
         </div>
     </footer>
-
 </body>
 
 </html>
