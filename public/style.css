@@ -983,6 +983,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-40 {
+  padding: 10rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1828,6 +1832,11 @@ video {
   .laptop\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .laptop\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .laptop\:pb-0 {
