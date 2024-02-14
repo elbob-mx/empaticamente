@@ -1233,6 +1233,26 @@ video {
     height: 100%;
   }
 
+  .mobile\:w-1\/2 {
+    width: 50%;
+  }
+
+  .mobile\:w-3\/4 {
+    width: 75%;
+  }
+
+  .mobile\:w-2\/4 {
+    width: 50%;
+  }
+
+  .mobile\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .mobile\:w-8\/12 {
+    width: 66.666667%;
+  }
+
   .mobile\:gap-4 {
     gap: 1rem;
   }
@@ -1240,6 +1260,109 @@ video {
   .mobile\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .mobile\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .mobileHor\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .mobileHor\:h-auto {
+    height: auto;
+  }
+
+  .mobileHor\:w-1\/2 {
+    width: 50%;
+  }
+
+  .mobileHor\:w-3\/4 {
+    width: 75%;
+  }
+
+  .mobileHor\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .mobileHor\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .mobileHor\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .mobileHor\:gap-4 {
+    gap: 1rem;
+  }
+
+  .mobileHor\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .mobileHor\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .mobileHor\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .mobileHor\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .mobileHor\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .mobileHor\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .mobileHor\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mobileHor\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .mobileHor\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .mobileHor\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mobileHor\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .mobileHor\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .mobileHor\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
