@@ -1304,6 +1304,10 @@ video {
     gap: 1rem;
   }
 
+  .mobile\:p-6 {
+    padding: 1.5rem;
+  }
+
   .mobile\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
