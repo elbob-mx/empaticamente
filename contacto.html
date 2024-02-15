@@ -20,14 +20,17 @@
 
     <!-- REGULAR NAVBAR -->
     <nav
-        class="sticky top-0 z-50 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
+        class="sticky top-0 z-50 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
         <div class="flex items-center justify-between laptop:justify-between">
-            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
+            <img src="./assets/img/logo/logoEmp-fondoVerde.svg" alt="logo Empáticamente"
+                class="w-16 laptop:w-20 hd:w-24">
             <ul
                 class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-2xl laptop:flex font-barlowCon">
                 <li><a href="index.html" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
-                <li><a href="conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
-                <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
+                <li><a href="conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a>
+                </li>
+                <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a>
+                </li>
                 <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
                 </li>
             </ul>
@@ -42,8 +45,9 @@
         <section
             class="w-full h-auto px-6 py-6 mx-auto rounded-lg laptop:py-12 laptop:px-0 hd:py-12 hd:px-60 font-barlow bg-verdeEmpClaro">
             <h2 class="pb-6 text-5xl text-center tablet:text-6xl font-barlowCon text-offBlack">Contáctanos</h2>
-            <form method="POST" id="form" action="https://getform.io/f/oeEJoYa0"
+            <form method="POST" id="form" action="https://formsubmit.co/psico.empaticamente@gmail.com"
                 class="self-center w-full laptop:basis-1/2 small:mb-2 laptop:mb-0 laptop:px-20 hd:px-40 tablet:px-4">
+
                 <!-- EMAIL -->
                 <div class="relative z-40 w-full mb-6 group">
                     <input type="email" name="email"
@@ -54,6 +58,9 @@
                         class="absolute small:text-base text-offBlack duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-verdeEmpMid peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 appearance-none">Tu
                         correo:</label>
                 </div>
+
+                <!-- NEXT -->
+                <input type="hidden" name="_next" value="https://empaticamente.com/gracias.html" />
 
                 <!-- NOMBRE(S) -->
                 <div class="relative z-0 w-full mb-6 group">
@@ -87,6 +94,7 @@
                         placeholder="Platícanos tus dudas, estamos para ayudarte" required></textarea>
                 </div>
 
+                <!-- SEND BOTÓN -->
                 <button type="submit"
                     class="flex justify-center w-1/2 px-6 py-2 mx-auto text-xl font-semibold duration-500 rounded-lg laptop:mt-10 laptop:px-8 laptop:py-3 laptop:text-2xl font-barlow active:bg-verdeEmpDark bg-verdeEmpMid hover:bg-verdeEmpDark text-offWhite focus:bg-verdeEmpDark hover:drop-shadow-md laptop:hover:-translate-y-1">
                     Enviar
