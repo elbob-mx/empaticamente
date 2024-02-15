@@ -632,6 +632,11 @@ video {
   margin-bottom: 0px;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -670,6 +675,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .box-border {
@@ -871,6 +880,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1047,6 +1060,21 @@ video {
   padding-right: 2rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1150,6 +1178,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-wider {
@@ -1403,6 +1435,18 @@ video {
     width: auto;
   }
 
+  .small\:w-\[100px\] {
+    width: 100px;
+  }
+
+  .small\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .small\:w-\[150px\] {
+    width: 150px;
+  }
+
   .small\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1432,6 +1476,14 @@ video {
     width: 100vw;
   }
 
+  .mobile\:w-1\/2 {
+    width: 50%;
+  }
+
+  .mobile\:w-3\/4 {
+    width: 75%;
+  }
+
   .mobile\:gap-4 {
     gap: 1rem;
   }
@@ -1443,6 +1495,11 @@ video {
   .mobile\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .mobile\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1566,6 +1623,11 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .tablet\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 811px) {
@@ -1682,6 +1744,11 @@ video {
     grid-column: span 4 / span 4;
   }
 
+  .laptop\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .laptop\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1760,6 +1827,10 @@ video {
 
   .laptop\:w-\[150px\] {
     width: 150px;
+  }
+
+  .laptop\:w-1\/2 {
+    width: 50%;
   }
 
   .laptop\:basis-1\/2 {
