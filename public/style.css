@@ -592,6 +592,10 @@ video {
   grid-column: span 3 / span 3;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -610,6 +614,11 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .mb-2 {
@@ -644,6 +653,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -676,6 +689,18 @@ video {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -695,6 +720,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-1\/4 {
+  width: 25%;
 }
 
 .flex-grow {
@@ -830,6 +863,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-b-2xl {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -846,6 +883,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
 }
 
 .border-b-2 {
@@ -894,6 +935,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -984,6 +1035,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pb-10 {
@@ -1563,6 +1619,10 @@ video {
     grid-column: span 4 / span 4;
   }
 
+  .laptop\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .laptop\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1590,6 +1650,10 @@ video {
 
   .laptop\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .laptop\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .laptop\:flex {
@@ -1780,6 +1844,10 @@ video {
     padding-left: 0px;
   }
 
+  .laptop\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
   .laptop\:text-left {
     text-align: left;
   }
@@ -1905,5 +1973,27 @@ video {
   .hd\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .hd\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .hd\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .hd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   }
 }
