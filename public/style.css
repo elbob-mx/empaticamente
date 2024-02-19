@@ -1453,6 +1453,10 @@ video {
 }
 
 @media (min-width: 767px) {
+  .tablet\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .tablet\:h-screen {
     height: 100vh;
   }
