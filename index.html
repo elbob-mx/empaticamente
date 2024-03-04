@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./public/style.css">
     <link rel="shortcut icon" href="./assets/img/logo/faviconEmp.svg" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <!--  -->
 
@@ -89,6 +90,11 @@
         </div>
 
         <!--CONTENT-->
+        <h1 class="px-12 text-5xl" x-data="{ message: 'I like Alpine and learning' }" x-text="message"></h1>
+        <div x-data="{ count: 0 }">
+            <button class="px-3 py-1 bg-cyan-500" x-on:click="count++">Increment</button>
+            <span x-text="count*10"></span>
+        </div>
         <h1 class="px-6 pb-4 text-5xl laptop:px-12 laptop:text-6xl font-barlowCon bg-offWhite text-offBlack">Artículos
         </h1>
         <p class="px-6 text-lg laptop:px-12 laptop:pb-4 laptop:text-xl font-barlow text-verdeEmpDark">
