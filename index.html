@@ -15,6 +15,8 @@
     <link rel="shortcut icon" href="./assets/img/logo/faviconEmp.svg" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <!--  -->
 
@@ -61,10 +63,11 @@
     </section>
     <!-- END LANDING MENU -->
 
-    <!-- REGULAR NAVBAR -->
-    <main class="z-50">
+    <main>
+
+        <!-- REGULAR NAVBAR -->
         <nav
-            class="sticky top-0 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
+            class="sticky top-0 z-50 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
             <div class="flex items-center justify-between laptop:justify-between">
                 <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20 hd:w-24">
                 <ul
@@ -90,7 +93,8 @@
         <!-- END MAIN BANNER -->
 
         <!-- INTRO -->
-        <div class="p-12 mt-20">
+
+        <div data-aos="fade-right" data-aos-duration="1300" class="p-12 mt-20">
             <h1 class="mb-6 text-7xl font-barlowCon text-offBlack">Somos</h1>
             <p class="text-xl font-barlow text-verdeEmpDark">es un grupo de psicólogas clínicas en México, enfocado en
                 la atención a
@@ -245,6 +249,8 @@
     </footer>
     <!-- END FOOTER -->
 
+    <!-- INIT AOS -->
+    <script>AOS.init();</script>
 </body>
 
 </html>
