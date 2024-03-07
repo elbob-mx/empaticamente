@@ -680,16 +680,16 @@ video {
   height: auto;
 }
 
-.h-dvh {
-  height: 100dvh;
-}
-
 .h-full {
   height: 100%;
 }
 
 .h-lvh {
   height: 100lvh;
+}
+
+.h-dvh {
+  height: 100dvh;
 }
 
 .h-screen {
