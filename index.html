@@ -33,7 +33,7 @@
 
 
         <!-- VERTICAL NAVBAR -->
-        <div
+        <div data-aos="fade" data-aos-duration="2000"
             class="flex flex-col flex-wrap content-center flex-grow col-span-1 gap-2 py-0 text-2xl tablet:text-4xl tablet:w-max laptop:w-full tablet:px-10 hd:gap-12 hd:text-5xl hd:px-20 tablet:gap-4 mobile:gap-4 vertIpadMini:text-4xl bigPhoneHor:h-auto mobileHor:h-auto bigPhoneHor:text-2xl mobileHor:text-2xl bigHor:text-2xl bigPhoneHor:gap-3 mobileHor:px-10 mobileHor:gap-3 bigHor:gap-3 vertIpadMini:gap-12 laptop:text-4xl laptop:gap-8 font-barlowCon mobile:text-3xl">
             <!-- MENU NAVBAR -->
             <a href="index.html"
@@ -42,6 +42,8 @@
                 class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">conócenos</a>
             <a href="servicios.html"
                 class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">servicios</a>
+            <a href="blog.html"
+                class="duration-700 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">blog</a>
             <a href="contacto.html"
                 class="duration-500 text-offWhite hover:text-verdeEmpDark hover:translate-x-3 w-fit">contáctanos</a>
             <!-- END VERTICAL NAVBAR -->
@@ -77,6 +79,8 @@
                     </li>
                     <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a>
                     </li>
+                    <li><a href="blog.html" class="duration-500 text-offWhite hover:text-amber-400">blog</a>
+                    </li>
                     <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
                     </li>
                 </ul>
@@ -86,20 +90,14 @@
         </nav>
         <!-- END REGULAR NAVBAR -->
 
-        <!-- MAIN BANNER -->
-        <!-- <div class="p-0 mt-0 laptop:mt-12 laptop:mb-0 laptop:p-12">
-            <img src="./assets/img/bkg/bkg-test.jpg" alt="fondo test" class="w-full laptop:rounded-2xl">
-        </div> -->
-        <!-- END MAIN BANNER -->
-
         <!-- INTRO -->
 
         <div data-aos="fade-right" data-aos-duration="1500" class="grid gap-6 p-8 mt-20 laptop:grid-cols-3 laptop:p-12">
             <h1 class="mb-6 laptop:col-span-3 text-7xl font-barlowCon text-offBlack">Somos</h1>
-            <p class="text-xl laptop:col-span-2 font-barlow text-verdeEmpDark">Un grupo de psicólogas clínicas en
-                México,
-                enfocado en
-                la atención a personas interesadas en su bienestar mental y emocional para mejorar su calidad de vida.
+            <p class="text-xl laptop:text-2xl laptop:col-span-2 font-barlow text-verdeEmpDark">Un grupo de psicólogas
+                clínicas en
+                México, enfocado en la atención a personas interesadas en su bienestar mental y emocional para mejorar
+                su calidad de vida.
             </p>
             <img data-aos="fade-left" data-aos-duration="1500" src="./assets/img/bkg/bkg-test.jpg" alt="flor"
                 class="rounded-xl">
@@ -112,109 +110,50 @@
         </div>
 
         <!--CONTENT-->
-        <h1 class="px-6 pb-4 text-5xl laptop:px-12 laptop:text-6xl font-barlowCon bg-offWhite text-offBlack">Artículos
-        </h1>
-        <p class="px-6 text-lg laptop:px-12 laptop:pb-4 laptop:text-xl font-barlow text-verdeEmpDark">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem architecto doloribus tempora
-            modi unde.</p>
-        <div
-            class="grid grid-cols-1 px-6 py-6 rounded-lg laptop:px-12 laptop:py-0 laptop:pb-12 laptop:grid-cols-12 hd:grid-cols-6">
-            <div
-                class="col-span-1 p-6 duration-500 ipad:p-6 hd:col-span-1 laptop:col-span-3 laptop:p-10 rounded-t-2xl laptop:rounded-l-2xl laptop:rounded-tr-none hover:bg-verdeEmpDark bg-verdeEmpMid text-offWhite">
-                <h2 class="text-4xl ipad:text-3xl bigHor:text-4xl hd:text-4xl font-barlowCon">
-                    Desregulación emocional
-                </h2>
-                <h3 class="py-4 text-xl ipad:text-lg bigHor:text-2xl hd:text-lg font-barlow">De que se trata y como
-                    manejarla</h3>
-            </div>
-
-            <img src="./assets/img/misc-images/couple-talking.jpeg" alt="pareja dialogando"
-                class="object-cover object-center h-full col-span-1 hd:col-span-1 laptop:col-span-4">
-
-            <div
-                class="flex flex-col justify-between col-span-1 p-6 text-lg ipad:text-base laptop:p-10 laptop:col-span-5 rounded-b-2xl laptop:rounded-r-2xl hd:col-span-4 ipad:p-6 laptop:rounded-bl-none bg-verdeEmpClaro text-offBlack font-barlow">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum placeat tempora quisquam
-                    cumque, excepturi pariatur itaque dignissimos, eos soluta sint expedita amet impedit voluptate,
-                    ut
-                    numquam vero voluptatibus! Nam a amet sapiente, doloremque corrupti cupiditate esse explicabo
-                    quis
-                    sequi.</p>
-
-                <button
-                    class="self-end w-full py-2 mt-10 duration-500 rounded-lg shadow-md hd:w-2/6 ipad:w-fit laptop:w-2/6 laptop:px-6 laptop:py-3 bg-verdeEmpMid hover:bg-verdeEmpDark"><a
-                        href="#" class="font-semibold font-barlow text-offWhite">Saber
-                        más</a></button>
-            </div>
+        <div data-aos="fade-right" data-aos-duration="1500" class="grid gap-6 p-8 mt-10 laptop:grid-cols-3 laptop:p-12">
+            <h2 class="mb-3 text-5xl laptop:col-span-3 font-barlowCon text-offBlack">Empáticos</h2>
+            <p class="text-xl laptop:text-2xl laptop:col-span-3 font-barlow text-verdeEmpDark">Creemos que todas las
+                personas merecen la
+                oportunidad de vivir una vida plena, y con sentido; no ejercemos prejuicios, ni criticamos tu manera y
+                tus estrategias para vivir la vida, reconocemos que hasta el momento ha sido lo mejor con lo que has
+                aprendido en tu contexto.
+            </p>
         </div>
 
-        <!-- 2ND CONTENT -->
-        <div
-            class="grid grid-cols-1 px-6 py-6 rounded-lg laptop:px-12 laptop:py-0 laptop:pb-12 laptop:grid-cols-12 hd:grid-cols-6">
-            <div
-                class="col-span-1 p-6 duration-500 hd:col-span-1 ipad:p-6 laptop:col-span-3 laptop:p-10 rounded-t-2xl laptop:rounded-l-2xl laptop:rounded-tr-none hover:bg-verdeEmpDark bg-verdeEmpMid text-offWhite">
-                <h2 class="text-4xl ipad:text-3xl bigHor:text-4xl hd:text-4xl font-barlowCon">Autismo</h2>
-                <h3 class="py-4 text-xl ipad:text-lg bigHor:text-2xl hd:text-lg font-barlow">Señales a considerar</h3>
-            </div>
+        <!-- HR DIVISION -->
+        <div class="flex flex-row w-full px-6 mt-12 mb-3 end laptop:mb-6 laptop:px-12">
+            <hr class="w-3/4 laptop:w-1/2 bigHor:w-1/2 h-[2px] border-[1px] border-verdeEmpMid rounded">
+        </div>
 
-            <img src="./assets/img/misc-images/autism.png" alt="autismo"
-                class="object-cover object-center h-full col-span-1 tablet:object-fill hd:col-span-1 laptop:col-span-4">
+        <div data-aos="fade-left" data-aos-duration="1500" class="grid gap-6 p-8 mt-10 laptop:grid-cols-3 laptop:p-12">
+            <p class="text-xl laptop:text-2xl laptop:col-span-3 font-barlow text-verdeEmpDark">Con formación basada en
+                evidencia
+                Desde el enfoque cognitivo conductual que tiene mejores resultados.
+                , ofrecemos estrategias y herramientas para tes prebleras
+                de lavida cotidana como como y sur destacatos,
+                cenio probblem acompoñamiento en pérdidas ordenar, aceptar y resolver problemas de la vida
+            </p>
+        </div>
 
-            <div
-                class="flex flex-col justify-between col-span-1 p-6 text-lg ipad:p-6 ipad:text-base laptop:p-10 laptop:col-span-5 rounded-b-2xl laptop:rounded-r-2xl hd:col-span-4 laptop:rounded-bl-none bg-verdeEmpClaro text-offBlack font-barlow">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum placeat tempora quisquam
-                    cumque, excepturi pariatur itaque dignissimos, eos soluta sint expedita amet impedit voluptate,
-                    ut
-                    numquam vero voluptatibus! Nam a amet sapiente, doloremque corrupti cupiditate esse explicabo
-                    quis
-                    sequi.</p>
-
-                <button
-                    class="self-end w-full py-2 mt-10 duration-500 rounded-lg shadow-md hd:w-2/6 ipad:w-fit laptop:w-2/6 laptop:px-6 laptop:py-3 bg-verdeEmpMid hover:bg-verdeEmpDark"><a
-                        href="#" class="font-semibold font-barlow text-offWhite">Saber
-                        más</a></button>
-            </div>
+        <!-- HR DIVISION -->
+        <div class="flex flex-row w-full px-6 mt-12 mb-3 end laptop:mb-6 laptop:px-12">
+            <hr class="w-3/4 laptop:w-1/2 bigHor:w-1/2 h-[2px] border-[1px] border-verdeEmpMid rounded">
         </div>
 
 
-        <div class="px-6 my-6 laptop:p-12">
-            <h1 class="py-4 text-5xl laptop:text-6xl font-barlowCon bg-offWhite text-offBlack">Empáticamente</h1>
-
-            <p class="py-4 text-lg laptop:text-xl font-barlow text-verdeEmpDark">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem architecto doloribus tempora
-                modi unde.</p>
-
-            <div class="w-full mt-6">
-                <div class="flex flex-row gap-4">
-                    <h2
-                        class="w-full p-4 text-2xl align-middle rounded-md laptop:text-4xl bg-verdeEmpClaro font-barlowCon text-offBlack">
-                        Lorem, ipsum dolor.
-                    </h2>
-                    <p
-                        class="items-center justify-center hidden w-full p-4 rounded-md laptop:flex laptop:w-auto bg-verdeEmpMid">
-                        <i class="text-2xl fas fa-smile text-offWhite"></i>
-                    </p>
-                </div>
-            </div>
-
-
-            <div
-                class="grid grid-flow-row grid-cols-1 my-4 tablet:px-12 tablet:py-6 laptop:p-12 laptop:grid-flow-col laptop:grid-cols-4">
-                <p class="col-span-3 pb-6 text-lg laptop:pb-0 laptop:mr-20 laptop:text-lg font-barlow text-offBlack">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis reprehenderit quis nemo at
-                    commodi nobis nostrum itaque aperiam tempora accusantium qui quidem, nam sequi aspernatur placeat
-                    consectetur sint aliquam id? Autem eos deleniti explicabo sunt. Repudiandae est nam nostrum quia
-                    dicta debitis esse recusandae blanditiis, atque, odit, voluptatibus laborum quidem! Provident ex
-                    error praesentium voluptas illo possimus a quidem veritatis. Nulla cum eaque consequatur enim sit
-                    maiores impedit! Minus amet ratione doloremque, numquam ab dolor illum? Soluta odit veniam labore
-                    iure laboriosam sunt repellendus illo, explicabo, suscipit similique nisi velit accusamus, ea
-                    impedit reprehenderit? Neque, maxime vero. Sit voluptatibus, iste quibusdam culpa recusandae sequi.
-                    Ducimus accusamus veniam accusantium quod nihil veritatis impedit sequi sed tempora, excepturi, quam
-                    tenetur sit atque.
-                </p>
-                <img src="./assets/img/bkg/bkg-test-flower.jpg" alt="flor"
-                    class="object-cover w-full col-span-1 rounded-lg h-1/2 laptop:h-full">
-            </div>
+        <!--CONTENT-->
+        <div data-aos="fade-right" data-aos-duration="1500" class="grid gap-6 p-8 mt-10 laptop:grid-cols-3 laptop:p-12">
+            <h2 class="mb-3 text-5xl laptop:col-span-3 font-barlowCon text-offBlack">Confiables</h2>
+            <p class="text-xl laptop:text-2xl laptop:col-span-3 font-barlow text-verdeEmpDark">sesiones confidenciales
+                con psicológos apersados en formación y supervisión constante.
+                Ten la tranquilidad de que los psicológos estan en constante formación y supervisich, siempre buscando
+                las herramientas mas actuales y revespaldadas para el amplimiento de tus dojetivos.
+            </p>
         </div>
+
+
+
+
         <!-- END CONTENT -->
 
     </main>
@@ -240,14 +179,19 @@
                         class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                         servicios</li>
                 </a>
+                <a href="blog.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                        blog</li>
+                </a>
                 <a href="contacto.html">
                     <li
                         class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                         contáctanos</li>
                 </a>
             </ul>
-            <div class="self-end pt-10 text-xs font-barlow text-offWhite">Lorem ipsum dolor sit amet consectetur
-                adipisicing.</div>
+            <div class="pt-10 text-xs font-barlow text-offWhite">Copyright© 2023 Empáticamente | Psicólogos
+                Especializados. Todos los derechos reservados.</div>
         </div>
     </footer>
     <!-- END FOOTER -->

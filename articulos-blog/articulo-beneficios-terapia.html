@@ -13,17 +13,20 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./public/style.css">
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body class="w-full h-full bg-offWhite">
 
     <!-- REGULAR NAVBAR -->
     <nav
-        class="sticky top-0 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
+        class="sticky top-0 z-50 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
         <div class="flex items-center justify-between laptop:justify-between">
             <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
             <ul
-                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-2xl laptop:flex font-barlowCon">
+                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-3xl laptop:flex font-barlowCon">
                 <li><a href="index.html" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
                 <li><a href="conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
                 <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
@@ -37,14 +40,22 @@
     </nav>
     <!-- END REGULAR NAVBAR -->
 
-    <section>
-        <div>
-            <h1 class="text-5xl font-barlowCon">Servicios</h1>
+    <section class="mt-24">
+        <div data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="1000"
+            class="grid gap-6 px-6 mt-12 mb-6 laptop:grid-cols-3 laptop:px-12">
+            <h2 class="mb-3 text-7xl laptop:col-span-3 font-barlowCon text-offBlack">Blog</h2>
+            <p class="text-xl laptop:text-2xl laptop:col-span-3 font-barlow text-verdeEmpDark">Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Id amet at blanditiis laudantium magnam. Veritatis quaerat
+                accusantium deserunt similique.
+            </p>
         </div>
+
+
+
     </section>
 
     <!-- FOOTER -->
-    <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
+    <footer class="bottom-0 flex flex-row justify-between p-10 mt-24 bg-offBlack">
         <div>
             <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-16">
             <ul>
@@ -74,10 +85,14 @@
                         contáctanos</li>
                 </a>
             </ul>
-            <div class="self-end pt-10 text-xs font-barlow text-offWhite">Copyright© 2023 Empáticamente | Psicólogos
+            <div class="self-end pt-10 text-xs font-barlow text-verdeEmpClaro">Copyright© 2023 Empáticamente |
+                Psicólogos
                 Especializados. Todos los derechos reservados.</div>
         </div>
     </footer>
+
+    <!-- INIT AOS -->
+    <script>AOS.init();</script>
 </body>
 
 </html>

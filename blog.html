@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="es-mx">
+    <title>Empáticamente | Psicólogos Especializados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="w-full h-full bg-offWhite">
+
+    <!-- REGULAR NAVBAR -->
+    <nav
+        class="sticky top-0 z-50 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
+        <div class="flex items-center justify-between laptop:justify-between">
+            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
+            <ul
+                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-3xl laptop:flex font-barlowCon">
+                <li><a href="index.html" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
+                <li><a href="conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
+                <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
+                <li><a href="blog.html" class="duration-500 text-offWhite hover:text-amber-400">blog</a></li>
+                <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
+                </li>
+            </ul>
+            <a href="#" class="laptop:hidden"><i id="mobileMenu"
+                    class="tablet:text-3xl fas fa-bars text-offWhite"></i></a>
+        </div>
+    </nav>
+    <!-- END REGULAR NAVBAR -->
+
+    <section class="mt-24">
+        <div data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-duration="1000"
+            class="grid gap-6 px-6 mt-12 mb-6 laptop:grid-cols-3 laptop:px-12">
+            <h2 class="mb-3 text-7xl laptop:col-span-3 font-barlowCon text-offBlack">Blog</h2>
+            <p class="text-xl laptop:text-2xl laptop:col-span-3 font-barlow text-verdeEmpDark">Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Id amet at blanditiis laudantium magnam. Veritatis quaerat
+                accusantium deserunt similique quasi.
+            </p>
+        </div>
+
+        <!-- HR DIVISION -->
+        <div class="flex flex-row w-full px-6 mb-10 laptop:mb-16 laptop:px-12">
+            <hr class="w-3/4 laptop:w-1/4 bigHor:w-1/2 h-[2px] border-[1px] border-verdeEmpMid rounded">
+        </div>
+
+        <!-- BLOG CONTENT BENEFICIOS -->
+        <div class="grid grid-cols-1 px-6 py-6 rounded-lg laptop:px-12 laptop:py-12 laptop:grid-cols-12 hd:grid-cols-6">
+            <div
+                class="col-span-1 p-6 duration-500 ipad:p-6 hd:col-span-1 laptop:col-span-3 laptop:p-10 rounded-t-2xl laptop:rounded-l-2xl laptop:rounded-tr-none hover:bg-verdeEmpDark bg-verdeEmpMid text-offWhite">
+                <h2 class="text-4xl ipad:text-3xl bigHor:text-4xl hd:text-4xl font-barlowCon">
+                    Beneficios de iniciar psicoterapia
+                </h2>
+                <h3 class="py-4 text-xl ipad:text-lg bigHor:text-2xl hd:text-lg font-barlow">¿Cómo saber si ya es
+                    momento de iniciar un proceso de psicoterapia?</h3>
+            </div>
+
+            <img src="./assets/img/misc-images/couple-talking.jpeg" alt="pareja dialogando"
+                class="object-cover object-center h-full col-span-1 hd:col-span-1 laptop:col-span-4">
+
+            <div
+                class="flex flex-col justify-between col-span-1 p-6 text-lg ipad:text-2xl laptop:p-10 laptop:col-span-5 rounded-b-2xl laptop:rounded-r-2xl hd:col-span-4 ipad:p-6 laptop:rounded-bl-none bg-verdeEmpClaro text-offBlack font-barlow">
+                <p>Iniciar un proceso de psicoterapia no es un paso sencillo, muchas personas se preguntan si realmente
+                    lo necesitan, o si quizá encontrarán las soluciones a sus problemas que los aqueja día con día.</p>
+
+
+
+                <a href="./articulos-blog/articulo-beneficios-terapia.html"
+                    class="self-end w-full py-2 mt-10 text-2xl font-semibold text-center duration-500 rounded-lg shadow-md appearance-button font-barlow text-offWhite hd:w-2/6 ipad:w-fit laptop:w-2/6 laptop:px-6 laptop:py-3 bg-verdeEmpMid hover:bg-verdeEmpDark">Saber
+                    más</a>
+            </div>
+        </div>
+
+        <!-- BLOG CONTENT BENEFICIOS -->
+        <div class="grid grid-cols-1 px-6 py-6 rounded-lg laptop:px-12 laptop:py-12 laptop:grid-cols-12 hd:grid-cols-6">
+            <div
+                class="col-span-1 p-6 duration-500 ipad:p-6 hd:col-span-1 laptop:col-span-3 laptop:p-10 rounded-t-2xl laptop:rounded-l-2xl laptop:rounded-tr-none hover:bg-verdeEmpDark bg-verdeEmpMid text-offWhite">
+                <h2 class="text-4xl ipad:text-3xl bigHor:text-4xl hd:text-4xl font-barlowCon">
+                    Beneficios de iniciar psicoterapia
+                </h2>
+                <h3 class="py-4 text-xl ipad:text-lg bigHor:text-2xl hd:text-lg font-barlow">¿Cómo saber si ya es
+                    momento de iniciar un proceso de psicoterapia?</h3>
+            </div>
+
+            <img src="./assets/img/misc-images/couple-talking.jpeg" alt="pareja dialogando"
+                class="object-cover object-center h-full col-span-1 hd:col-span-1 laptop:col-span-4">
+
+            <div
+                class="flex flex-col justify-between col-span-1 p-6 text-lg ipad:text-2xl laptop:p-10 laptop:col-span-5 rounded-b-2xl laptop:rounded-r-2xl hd:col-span-4 ipad:p-6 laptop:rounded-bl-none bg-verdeEmpClaro text-offBlack font-barlow">
+                <p>Iniciar un proceso de psicoterapia no es un paso sencillo, muchas personas se preguntan si realmente
+                    lo necesitan, o si quizá encontrarán las soluciones a sus problemas que los aqueja día con día.</p>
+
+
+
+                <a href="./articulos-blog/articulo-beneficios-terapia.html"
+                    class="self-end w-full py-2 mt-10 text-2xl font-semibold text-center duration-500 rounded-lg shadow-md appearance-button font-barlow text-offWhite hd:w-2/6 ipad:w-fit laptop:w-2/6 laptop:px-6 laptop:py-3 bg-verdeEmpMid hover:bg-verdeEmpDark">Saber
+                    más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bottom-0 flex flex-row justify-between p-10 mt-24 bg-offBlack">
+        <div>
+            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-16">
+            <ul>
+                <a href="index.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                        inicio</li>
+                </a>
+                <a href="conocenos.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                        conócenos</li>
+                </a>
+                <a href="servicios.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                        servicios</li>
+                </a>
+                <a href="blog.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                        blog</li>
+                </a>
+                <a href="contacto.html">
+                    <li
+                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                        contáctanos</li>
+                </a>
+            </ul>
+            <div class="self-end pt-10 text-xs font-barlow text-verdeEmpClaro">Copyright© 2023 Empáticamente |
+                Psicólogos
+                Especializados. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <!-- INIT AOS -->
+    <script>AOS.init();</script>
+</body>
+
+</html>
