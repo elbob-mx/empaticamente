@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./public/style.css">
     <link rel="shortcut icon" href="./assets/img/logo/faviconEmp.svg" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -93,17 +92,44 @@
 
         <!-- INTRO -->
 
-        <div data-aos="fade-down" data-aos-duration="1500"
-            class="grid gap-6 px-6 py-8 mt-20 laptop:grid-cols-3 laptop:p-12">
-            <h1 class="mb-6 laptop:col-span-3 text-7xl font-barlowCon text-offBlack">Somos</h1>
-            <p class="text-xl laptop:text-2xl laptop:col-span-2 font-barlow text-verdeEmpDark">Un grupo de psicólogas
-                clínicas en
-                México, enfocado en la atención a personas interesadas en su bienestar mental y emocional para mejorar
-                su calidad de vida.
-            </p>
-            <img data-aos="fade" data-aos-duration="1500" src="./assets/img/bkg/bkg-test.jpg" alt="flor"
-                class=" rounded-xl">
-        </div>
+        <section
+            class="flex flex-col laptop:h-screen items-center justify-between laptop:flex-row px-6 py-8 laptop:px-40 laptop:py-24">
+
+            <div class="laptop:basis-1/2">
+                <h1 class="mb-6 laptop:text-8xl text-7xl font-barlowCon text-offBlack">Somos un grupo de psicólogas
+                    clínicas en México.
+                </h1>
+                <p
+                    class="text-xl laptop:text-3xl font-barlow bg-verdeEmpClaro laptop:bg-none p-6 laptop:p-0 rounded-lg laptop:rounded-none text-verdeEmpDark mt-6">
+                    Enfocadas en la
+                    atención a personas interesadas en su bienestar mental y emocional para mejorar su calidad de vida,
+                    desde el enfoque cognitivo conductual.
+                </p>
+                <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                    type="button" data-ripple-light="true">
+                    Ripple Effect On</button>
+            </div>
+
+            <div class="laptop:basis-1/2 justify-end laptop:flex relative hidden">
+                <img src="./assets/img/plants/index-intro-plant.svg" alt="planta decorativa"
+                    class="object-cover min-w-[200px] max-w-[600px]">
+                <dir
+                    class="absolute bg-offWhite font-barlow font-semibold top-80 right-8 p-4 text-2xl ring-4 ring-verdeEmpDark rounded-lg shadow-lg shadow-verdeEmpDark">
+                    Lorem ipsum
+                    dolor
+                    sit amet.
+                </dir>
+                <dir
+                    class="absolute bg-offWhite font-barlow font-semibold bottom-40 left-60 p-4 text-2xl ring-4 ring-verdeEmpDark rounded-lg shadow-lg shadow-verdeEmpDark">
+                    Lorem ipsum.
+                </dir>
+                <dir
+                    class="absolute bg-offWhite font-barlow font-semibold bottom-72 right-4 p-4 text-2xl ring-4 ring-verdeEmpDark rounded-lg shadow-lg shadow-verdeEmpDark">
+                    Lorem ipsum amet.
+                </dir>
+            </div>
+        </section>
         <!-- END INTRO -->
 
         <!-- HR DIVISION -->
@@ -246,4 +272,4 @@
     <script>AOS.init();</script>
 </body>
 
-</html>
+</html>   
