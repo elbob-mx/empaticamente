@@ -680,6 +680,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1182,6 +1186,10 @@ video {
   font-style: italic;
 }
 
+.leading-loose {
+  line-height: 2;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -1276,6 +1284,21 @@ video {
 
 .first-letter\:text-6xl::first-letter {
   font-size: 3.75rem;
+  line-height: 1;
+}
+
+.first-letter\:text-4xl::first-letter {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.first-letter\:text-3xl::first-letter {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.first-letter\:text-5xl::first-letter {
+  font-size: 3rem;
   line-height: 1;
 }
 
