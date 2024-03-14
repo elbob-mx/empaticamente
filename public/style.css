@@ -606,6 +606,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -728,16 +732,8 @@ video {
   grid-auto-flow: row;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -766,6 +762,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -810,6 +810,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -932,10 +936,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -991,6 +991,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1021,6 +1026,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-baseline {
+  vertical-align: baseline;
 }
 
 .align-middle {
@@ -1126,6 +1135,11 @@ video {
   color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
+.text-verdeEmp {
+  --tw-text-opacity: 1;
+  color: rgb(162 173 162 / var(--tw-text-opacity));
+}
+
 .text-verdeEmpClaro {
   --tw-text-opacity: 1;
   color: rgb(223 226 223 / var(--tw-text-opacity));
@@ -1157,6 +1171,10 @@ video {
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+.\*\:overflow-x-hidden > * {
+  overflow-x: hidden;
 }
 
 .hover\:-translate-y-1:hover {
@@ -1599,10 +1617,6 @@ video {
     margin-bottom: 0px;
   }
 
-  .laptop\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
-
   .laptop\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -1737,10 +1751,6 @@ video {
     padding: 3rem;
   }
 
-  .laptop\:p-14 {
-    padding: 3.5rem;
-  }
-
   .laptop\:p-6 {
     padding: 1.5rem;
   }
@@ -1788,6 +1798,10 @@ video {
   .laptop\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .laptop\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .laptop\:pb-2 {
