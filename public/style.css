@@ -588,6 +588,14 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -672,6 +680,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .w-1\/2 {
@@ -804,16 +816,33 @@ video {
   gap: 1.5rem;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-x-9 {
+  -moz-column-gap: 2.25rem;
+       column-gap: 2.25rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
 
 .self-center {
   align-self: center;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1024,6 +1053,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1092,6 +1125,16 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-medium {
@@ -1171,10 +1214,6 @@ video {
 
 .duration-700 {
   transition-duration: 700ms;
-}
-
-.\*\:overflow-x-hidden > * {
-  overflow-x: hidden;
 }
 
 .hover\:-translate-y-1:hover {
@@ -1725,6 +1764,10 @@ video {
     gap: 2rem;
   }
 
+  .laptop\:gap-y-0 {
+    row-gap: 0px;
+  }
+
   .laptop\:rounded-l-2xl {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -1775,6 +1818,11 @@ video {
     padding-right: 5rem;
   }
 
+  .laptop\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .laptop\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1798,6 +1846,16 @@ video {
   .laptop\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .laptop\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .laptop\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   .laptop\:pb-0 {
@@ -1851,6 +1909,11 @@ video {
 
   .laptop\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .laptop\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
