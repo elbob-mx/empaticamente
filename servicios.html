@@ -13,22 +13,29 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./public/style.css">
     <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body class="w-full h-full bg-offWhite">
 
     <!-- REGULAR NAVBAR -->
     <nav
-        class="sticky top-0 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-4 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
+        class="sticky top-0 z-50 w-full px-4 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpDark">
         <div class="flex items-center justify-between laptop:justify-between">
-            <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
+            <img src="../assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
             <ul
-                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-2xl laptop:flex font-barlowCon">
-                <li><a href="index.html" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
-                <li><a href="conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
-                <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
-                <li><a href="blog.html" class="duration-500 text-offWhite hover:text-amber-400">blog</a></li>
-                <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
+                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-3xl laptop:flex font-barlowCon">
+                <li><a href="../index.html" class="duration-500 text-offWhite hover:text-amber-400">Inicio</a></li>
+                <li><a href="../conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">Lo que
+                        hacemos</a>
+                </li>
+                <li><a href="../servicios.html" class="duration-500 text-offWhite hover:text-amber-400">Cómo podemos
+                        ayudarte</a>
+                </li>
+                <li><a href="../blog.html" class="duration-500 text-offWhite hover:text-amber-400">Blog</a></li>
+                <li><a href="../contacto.html" class="duration-500 text-offWhite hover:text-amber-400">Contáctanos</a>
                 </li>
             </ul>
             <a href="#" class="laptop:hidden"><i id="mobileMenu"
@@ -36,53 +43,124 @@
         </div>
     </nav>
     <!-- END REGULAR NAVBAR -->
+    <main>
+        <section>
+            <div
+                class="grid items-center grid-cols-1 px-6 mt-12 mb-6 laptop:mt-24 laptop:gap-x-10 gap-y-8 laptop:gap-y-0 laptop:grid-cols-4 laptop:px-48">
+                <h1
+                    class="mb-6 text-6xl laptop:mb-10 laptop laptop:text-7xl laptop:col-span-4 font-barlowCon text-offBlack">
+                    Servicios</h1>
+                <img src="./assets/img/bkg/bkg-test.jpg" alt="test" class="object-fill w-full col-span-2 rounded-lg">
+                <div class="items-center col-span-2">
+                    <h2 class="text-3xl font-semibold laptop:text-4xl text-verdeEmpDark font-barlow">Lorem, ipsum.</h2>
+                    <p
+                        class="pt-4 my-6 text-xl leading-relaxed border-t border-verdeEmpMid font-barlow text-verdeEmpDark">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Minus necessitatibus
+                        corrupti id, consequatur esse voluptate ratione inventore possimus error nam minima repudiandae,
+                        at
+                        optio quis veniam, maxime vel porro exercitationem debitis alias eligendi pariatur. Minima iure
+                        aliquid
+                        odit ratione inventore nesciunt exercitationem ad? Molestias, repellat vitae itaque ab ratione
+                        eos.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <div
-            class="grid grid-cols-1 px-6 mt-12 mb-6 laptop:mt-24 laptop:gap-x-10 gap-y-8 laptop:gap-y-0 laptop:grid-cols-4 laptop:px-48">
-            <h1
-                class="mb-6 text-6xl laptop:mb-10 laptop laptop:text-7xl laptop:col-span-4 font-barlowCon text-offBlack">
-                Servicios</h1>
-            <img src="./assets/img/bkg/bkg-test.jpg" alt="test" class="object-fill w-full col-span-2 rounded-lg">
-            <p class="items-center col-span-2 p-20 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Minus necessitatibus
-                corrupti id, consequatur esse voluptate ratione inventore possimus error nam minima repudiandae, at
-                optio quis veniam, maxime vel porro exercitationem debitis alias eligendi pariatur. Minima iure aliquid
-                odit ratione inventore nesciunt exercitationem ad? Molestias, repellat vitae itaque ab ratione eos.</p>
-        </div>
-    </section>
+        <section>
+            <div
+                class="grid items-center grid-cols-1 px-6 mt-12 mb-20 laptop:mt-24 laptop:gap-x-10 gap-y-8 laptop:gap-y-0 laptop:grid-cols-4 laptop:px-48">
+                <img src="./assets/img/bkg/bkg-test.jpg" alt="test" class="object-fill w-full col-span-2 rounded-lg">
+                <div class="items-center col-span-2">
+                    <h2 class="text-3xl font-semibold laptop:text-4xl text-verdeEmpDark font-barlow">Lorem, ipsum.</h2>
+                    <p
+                        class="pt-4 my-6 text-xl leading-relaxed border-t border-verdeEmpMid font-barlow text-verdeEmpDark">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Minus necessitatibus
+                        corrupti id, consequatur esse voluptate ratione inventore possimus error nam minima repudiandae,
+                        at
+                        optio quis veniam, maxime vel porro exercitationem debitis alias eligendi pariatur. Minima iure
+                        aliquid
+                        odit ratione inventore nesciunt exercitationem ad? Molestias, repellat vitae itaque ab ratione
+                        eos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRATAMOS CON: -->
+        <section
+            class="flex flex-col flex-wrap items-center gap-16 p-6 laptop:justify-evenly laptop:flex-row laptop:px-48 laptop:py-24 bg-verdeEmpClaro">
+            <h2 class="w-full text-3xl text-center font-barlow text-verdeEmpDark">Nos especializamos en:
+            </h2>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+            <div
+                class="flex flex-col justify-center w-56 h-56 text-2xl font-semibold text-center cursor-pointer rounded-2xl bg-verdeEmp">
+                <i class="text-6xl fa-solid fa-brain"></i>Lorem,
+                ipsum.</span>
+            </div>
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
     <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
         <div>
             <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-16">
             <ul>
-                <a href="index.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        inicio</li>
-                </a>
-                <a href="conocenos.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        conócenos</li>
-                </a>
-                <a href="servicios.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        servicios</li>
-                </a>
-                <a href="blog.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        blog</li>
-                </a>
-                <a href="contacto.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        contáctanos</li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="conocenos.html">Conócenos</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="contacto.html">Contáctanos</a>
+                </li>
                 </a>
             </ul>
+
             <div class="self-end pt-10 text-xs font-barlow text-offWhite">Copyright© 2023 Empáticamente | Psicólogos
                 Especializados. Todos los derechos reservados.</div>
         </div>
