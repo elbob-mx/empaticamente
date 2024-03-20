@@ -702,7 +702,6 @@ video {
 
 .flex {
   display: flex;
-  justify-content: space-around;
 }
 
 .grid {
@@ -1250,10 +1249,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 .italic {
@@ -1907,16 +1902,16 @@ video {
     flex-direction: row;
   }
 
-  .laptop\:content-around {
-    align-content: space-around;
-  }
-
   .laptop\:justify-end {
     justify-content: flex-end;
   }
 
   .laptop\:justify-between {
     justify-content: space-between;
+  }
+
+  .laptop\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .laptop\:gap-16 {

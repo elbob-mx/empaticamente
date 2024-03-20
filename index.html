@@ -51,13 +51,16 @@
             <!-- SOCIAL NETWORKS -->
             <div
                 class="flex flex-row justify-start gap-12 pt-5 text-2xl laptop:gap-16 vertIpadMini:text-4xl tablet:gap-14 tablet:text-3xl laptop:text-4xl bigPhoneHor:text-2xl mobileHor:text-2xl bigHor:text-2xl bigHor:pr-14 bigPhoneHor:pr-14 bigPhoneHor:gap-7 mobileHor:px-0 mobileHor:gap-14 bigHor:gap-7 hd:text-5xl hover:drop-shadow-md mobile:text-3xl">
-                <a href="#" class="duration-700 hover:-translate-y-1"><i
+                <a href="#" class="duration-700 hover:-translate-y-1" aria-label="whatsapp"><i
                         class="duration-700 text-offWhite hover:text-[#0F5D54] fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/empaticamentemx" class="duration-700 hover:-translate-y-1"><i
+                <a href="https://www.facebook.com/empaticamentemx" class="duration-700 hover:-translate-y-1"
+                    aria-label="facebook"><i
                         class="duration-700 text-offWhite hover:text-[#316FF6] fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/empaticamentemx/" class="duration-700 hover:-translate-y-1"><i
+                <a href="https://www.instagram.com/empaticamentemx/" class="duration-700 hover:-translate-y-1"
+                    aria-label="instagram"><i
                         class="duration-700 text-offWhite hover:text-[#F27A1D] fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@empaticamente4" class="duration-700 hover:-translate-y-1"><i
+                <a href="https://www.tiktok.com/@empaticamente4" class="duration-700 hover:-translate-y-1"
+                    aria-label="tiktok"><i
                         class="duration-700 text-offWhite hover:text-[#53E9F4] fa-brands fa-tiktok"></i></a>
             </div>
             <!-- END SOCIAL NETWORKS -->
@@ -86,7 +89,7 @@
                             class="duration-500 text-offWhite hover:text-amber-400">Contáctanos</a>
                     </li>
                 </ul>
-                <a href="#" class="laptop:hidden"><i id="mobileMenu"
+                <a href="#" class="laptop:hidden" title="hamburger"><i id="mobileMenu"
                         class="tablet:text-3xl fas fa-bars text-offWhite"></i></a>
             </div>
         </nav>
@@ -236,34 +239,31 @@
     <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
         <div>
             <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-16">
-            <ul class="">
-                <a href="index.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        inicio</li>
-                </a>
-                <a href="conocenos.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        conócenos</li>
-                </a>
-                <a href="servicios.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        servicios</li>
-                </a>
-                <a href="blog.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        blog</li>
-                </a>
-                <a href="contacto.html">
-                    <li
-                        class="pb-2 text-base duration-500 text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                        contáctanos</li>
+            <ul>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="conocenos.html">Conócenos</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li
+                    class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
+                    <a href="contacto.html">Contáctanos</a>
+                </li>
                 </a>
             </ul>
-            <div class="pt-10 text-xs font-barlow text-offWhite">Copyright© 2023 Empáticamente | Psicólogos
+
+            <div class="self-end pt-10 text-xs font-barlow text-offWhite">Copyright© 2023 Empáticamente | Psicólogos
                 Especializados. Todos los derechos reservados.</div>
         </div>
     </footer>
