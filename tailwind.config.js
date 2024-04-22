@@ -30,6 +30,7 @@ module.exports = withMT({
         verdeEmp: "#A2ADA2",
         verdeEmpClaro: "#DFE2DF",
         verdeEmpMid: "#7D8C7D",
+        verdeEmpMid2: "#A4ACA3",
         verdeEmpDark: "#566156",
       },
     },
