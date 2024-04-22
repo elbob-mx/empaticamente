@@ -12,9 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./public/style.css">
-    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="shortcut icon" href="./assets/img/logo/faviconEmp.svg" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
@@ -26,12 +26,15 @@
         <div class="flex items-center justify-between laptop:justify-between">
             <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente" class="w-16 laptop:w-20">
             <ul
-                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-2xl hd:text-3xl laptop:flex font-barlowCon">
-                <li><a href="index.html" class="duration-500 text-offWhite hover:text-amber-400">inicio</a></li>
-                <li><a href="conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">conócenos</a></li>
-                <li><a href="servicios.html" class="duration-500 text-offWhite hover:text-amber-400">servicios</a></li>
-                <li><a href="blog.html" class="duration-500 text-offWhite hover:text-amber-400">blog</a></li>
-                <li><a href="contacto.html" class="duration-500 text-offWhite hover:text-amber-400">contáctanos</a>
+                class="flex-row hidden gap-20 text-3xl font-normal laptop:text-xl hd:text-3xl laptop:flex font-barlowCon">
+                <li><a href="../index.html" class="duration-500 text-offWhite hover:text-amber-400">Inicio</a></li>
+                <li><a href="../conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">Conócenos</a>
+                </li>
+                <li><a href="../faq.html" class="duration-500 text-offWhite hover:text-amber-400">Preguntas
+                        frecuentes</a>
+                </li>
+                <li><a href="../blog.html" class="duration-500 text-offWhite hover:text-amber-400">Blog</a></li>
+                <li><a href="../contacto.html" class="duration-500 text-offWhite hover:text-amber-400">Contáctanos</a>
                 </li>
             </ul>
             <a href="#" class="laptop:hidden" title="hamburger"><i id="mobileMenu"
@@ -52,7 +55,7 @@
 
         <!-- HR DIVISION -->
         <div class="flex flex-row w-full px-6 mb-10 laptop:mb-16 laptop:px-12">
-            <hr class="w-3/4 laptop:w-1/4 bigHor:w-1/2 h-[2px] border-[1px] border-verdeEmpMid rounded">
+            <hr class="w-3/4 laptop:w-1/4 bigHor:w-1/2 h-[2px] border-[1px] border-verdeEmpMid bg-verdeEmpMid rounded">
         </div>
 
         <!-- BLOG CONTENT BENEFICIOS -->
@@ -103,7 +106,7 @@
 
 
 
-                <a href="./articulos-blog/articulo-beneficios-terapia.html"
+                <a href="./articulos/articulo-beneficios-terapia.html"
                     class="self-end w-full py-2 mt-10 text-2xl font-semibold text-center duration-500 rounded-lg shadow-md appearance-button font-barlow text-offWhite hd:w-2/6 ipad:w-fit laptop:w-2/6 laptop:px-6 laptop:py-3 bg-verdeEmpMid hover:bg-verdeEmpDark">Saber
                     más</a>
             </div>
@@ -112,10 +115,10 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bottom-0 flex flex-row justify-between p-10 bg-offBlack">
+    <footer class="bottom-0 flex flex-col justify-between p-10 bg-offBlack">
         <div>
             <img src="./assets/img/logo/logoEmpW-01.svg" alt="logo empaticamente" class="w-16 pb-10 laptop:w-16">
-            <ul>
+            <ul class="mb-12">
                 <li
                     class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
                     <a href="index.html">Inicio</a>
@@ -126,7 +129,7 @@
                 </li>
                 <li
                     class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
-                    <a href="servicios.html">Servicios</a>
+                    <a href="faq.html">Preguntas Frecuentes</a>
                 </li>
                 <li
                     class="pb-2 text-base duration-500 w-fit text-offWhite font-barlow hover:text-amber-400 hover:translate-x-2">
@@ -139,8 +142,16 @@
                 </a>
             </ul>
 
-            <div class="self-end pt-10 text-xs font-barlow text-offWhite">Copyright© 2023 Empáticamente | Psicólogos
-                Especializados. Todos los derechos reservados.</div>
+            <hr class="h-[1px] rounded-full border-0 bg-verdeEmpMid">
+
+            <div class="mt-4 text-xs laptop:text-sm font-barlow">
+                <div class="mb-3 text-amber-400">Av. Montevideo 2507 / Col. Providencia / Gdl , Jal.
+                    MX</div>
+                <div class="mb-3 text-amber-400">Lerdo de Tejada / Gdl, Jal. MX</div>
+                <div class="font-barlow text-verdeEmpClaro">Copyright© 2023 Empáticamente | Psicólogos
+                    Especializados. Todos los derechos reservados.</div>
+            </div>
+
         </div>
     </footer>
 
