@@ -22,30 +22,39 @@
 
     <!-- MAIN MENU -->
     <div id="ham"
-         class="fixed z-50 flex flex-col items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-gradient-to-b from-green-500 to-green-700 text-offWhite laptop:hidden">
+         class="fixed z-50 flex flex-col items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-hidden text-3xl tracking-wide duration-500 origin-left bg-gradient-to-b from-verdeEmpMid to-verdeEmpDark text-offWhite laptop:hidden">
 
-        <ul class="font-barlow">
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html"
-                   aria-label="inicio"><i
-                       class="pr-4 fa-solid fa-house fa-xs" style="color: #F2F2F2;"></i>Inicio</a></li>
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="nosotros.html"
-                   aria-label="nosotros"><i class="pr-4 fa-solid fa-users fa-xs"
-                       style="color: #F2F2F2;"></i>Nosotros</a></li>
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="productos.html"
-                   aria-label="productos"><i class="pr-4 fa-solid fa-screwdriver-wrench fa-xs"
-                       style="color: #F2F2F2;"></i>Productos</a></li>
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="contacto.html"
-                   aria-label="contacto"><i class="pr-4 fa-solid fa-envelope fa-xs"
-                       style="color: #F2F2F2;"></i>Contacto</a></li>
-        </ul> <!-- BOTON CERRAR -->
+        <div class="flex flex-col">
+            <ul class="duration-300 font-barlow">
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./index.html"
+                       aria-label="inicio">Inicio</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./conocenos.html"
+                       aria-label="conocenos">Conócenos</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./faq.html"
+                       aria-label="preguntas frecuentes">Preguntas frecuentes</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./blog.html"
+                       aria-label="blog">Blog</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./contacto.html"
+                       aria-label="contacto">Contáctanos</a></li>
+            </ul>
+            <!-- contacto menu -->
+            <p class="mt-12 text-xl font-barlow"><i class="fa-solid fa-phone text-offWhite"></i>&ensp;333.123.4567</p>
+            <a href="https://api.whatsapp.com/send?phone=3318581655"
+               class="mt-6 text-xl duration-700 font-barlow hover:-translate-y-1"
+               aria-label="whatsapp"><i
+                   class="duration-700 text-offWhite hover:text-[#0F5D54] fa-brands fa-whatsapp"></i>&ensp;Agendar una
+                cita</a>
+        </div>
+
+        <!-- BOTON CERRAR -->
         <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
-            <i name="cerrar" onclick="Close(this)" class="fa-solid fa-xmark text-offWhite"></i>
+            <i name="cerrar" onclick="Close(this)" class="text-4xl fa-solid fa-xmark text-offWhite"></i>
         </div>
     </div>
 
     <!-- LANDING MENU -->
     <section
-             class="z-40 grid items-center w-full h-screen grid-flow-row grid-cols-1 laptop:grid-flow-col bigPhoneHor:grid-flow-col mobileHor:grid-flow-col mobile:grid-flow-row mobileOldHorSmall:grid-flow-row bigHor:grid-flow-col laptop:grid-cols-2 bg-verdeEmp mobile:h-screen">
+             class="z-30 grid items-center w-full h-screen grid-flow-row grid-cols-1 laptop:grid-flow-col bigPhoneHor:grid-flow-col mobileHor:grid-flow-col mobile:grid-flow-row mobileOldHorSmall:grid-flow-row bigHor:grid-flow-col laptop:grid-cols-2 bg-verdeEmp mobile:h-screen">
 
         <div class="flex justify-center h-full col-span-1 bg-offWhite">
             <img data-aos="fade" data-aos-duration="2000" src="./assets/img/logo/logoEmp-fondoBlanco.svg"
@@ -96,7 +105,7 @@
 
         <!-- REGULAR NAVBAR -->
         <nav
-             class="sticky top-0 z-50 w-full px-6 py-5 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
+             class="sticky top-0 z-40 w-full px-6 py-5 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
             <div class="flex items-center justify-between laptop:justify-between">
                 <a href="#"><img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente"
                          class="w-16 laptop:w-20"></a>
@@ -116,9 +125,9 @@
                 </ul>
 
                 <div id="hamBtn"
-                     class="flex flex-row p-0 align-middle duration-300 rounded-sm cursor-pointer laptop:hidden right-3 top-6">
-                    <i id="mobileMenu"
-                       class="text-2xl tablet:text-3xl fas fa-bars text-offWhite"></i>
+                     class="flex flex-row p-0 align-middle duration-300 rounded-sm cursor-pointer laptop:hidden right-3 top-6"
+                     title="mobile menu">
+                    <i onclick="Open(this)" class="text-2xl tablet:text-3xl fas fa-bars text-offWhite"></i>
                 </div>
 
             </div>
@@ -131,7 +140,7 @@
                  class="flex flex-col items-center justify-between px-6 py-8 laptop:h-auto bg-grandient-to-b from-verdeEmpClaro laptop:flex-row laptop:px-20 hd:px-40 hd:py-24 laptop:py-24">
 
             <div class="laptop:basis-1/2">
-                <h1 class="z-50 mb-6 laptop:text-8xl ipad:text-5xl hd:text-8xl text-7xl font-barlowCon text-offBlack">
+                <h1 class="z-20 mb-6 laptop:text-8xl ipad:text-5xl hd:text-8xl text-7xl font-barlowCon text-offBlack">
                     Somos un grupo de psicólogas clínicas en México.
                 </h1>
                 <p class="pb-3 mt-6 text-xl laptop:text-2xl ipad:text-lg hd:text-2xl font-barlow text-verdeEmpDark">
@@ -163,7 +172,8 @@
         <!-- END INTRO -->
 
         <!-- SECTION ABOUT US -->
-        <section class="flex flex-col gap-6 px-6 py-8 tablet:flex-row hd:gap-12 hd:px-24 hd:py-12 bg-verdeEmpMid">
+        <section
+                 class="flex flex-col gap-6 px-6 py-8 tablet:flex-row hd:gap-12 hd:px-24 hd:py-12 bg-verdeEmpClaro laptop:bg-verdeEmpMid">
 
             <!-- EMPATICOS -->
             <div data-aos="fade" data-aos-duration="1500"
