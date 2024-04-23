@@ -20,26 +20,65 @@
 
 <body class="w-full h-full bg-offWhite">
 
+    <!-- MAIN MENU -->
+    <div id="ham"
+         class="fixed z-50 flex flex-col items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-hidden text-3xl tracking-wide duration-500 origin-left bg-gradient-to-b from-verdeEmpMid to-verdeEmpDark text-offWhite laptop:hidden">
+
+        <div class="flex flex-col">
+            <ul class="duration-300 font-barlow">
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./index.html"
+                       aria-label="inicio">Inicio</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./conocenos.html"
+                       aria-label="conocenos">Conócenos</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./faq.html"
+                       aria-label="preguntas frecuentes">Preguntas frecuentes</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./blog.html"
+                       aria-label="blog">Blog</a></li>
+                <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="./contacto.html"
+                       aria-label="contacto">Contáctanos</a></li>
+            </ul>
+            <!-- contacto menu -->
+            <p class="mt-12 text-xl font-barlow"><i class="fa-solid fa-phone text-offWhite"></i>&ensp;333.123.4567</p>
+            <a href="https://api.whatsapp.com/send?phone=3318581655"
+               class="mt-6 text-xl duration-700 font-barlow hover:-translate-y-1"
+               aria-label="whatsapp"><i
+                   class="duration-700 text-offWhite hover:text-[#0F5D54] fa-brands fa-whatsapp"></i>&ensp;Agendar una
+                cita</a>
+        </div>
+
+        <!-- BOTON CERRAR -->
+        <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
+            <i name="cerrar" onclick="Close(this)" class="text-4xl fa-solid fa-xmark text-offWhite"></i>
+        </div>
+    </div>
+
     <!-- REGULAR NAVBAR -->
     <nav
-         class="sticky top-0 z-50 w-full px-6 py-3 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
+         class="sticky top-0 z-40 w-full px-6 py-5 shadow-md laptop:px-10 hd:px-20 hd:py-6 tablet:py-4 tablet:px-8 laptop:py-3 bg-verdeEmpMid">
         <div class="flex items-center justify-between laptop:justify-between">
-            <a href="./index.html"><img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente"
+            <a href="#"><img src="./assets/img/logo/logoEmpW-01.svg" alt="logo Empáticamente"
                      class="w-16 laptop:w-20"></a>
             <ul
                 class="flex-row hidden gap-20 text-3xl font-normal laptop:text-xl hd:text-3xl laptop:flex font-barlowCon">
                 <li><a href="./index.html" class="duration-500 text-offWhite hover:text-amber-400">Inicio</a></li>
-                <li><a href="./conocenos.html" class="duration-500 text-offWhite hover:text-amber-400">Conócenos</a>
+                <li><a href="./conocenos.html"
+                       class="duration-500 text-offWhite hover:text-amber-400">Conócenos</a>
                 </li>
                 <li><a href="./faq.html" class="duration-500 text-offWhite hover:text-amber-400">Preguntas
                         frecuentes</a>
                 </li>
                 <li><a href="./blog.html" class="duration-500 text-offWhite hover:text-amber-400">Blog</a></li>
-                <li><a href="./contacto.html" class="duration-500 text-offWhite hover:text-amber-400">Contáctanos</a>
+                <li><a href="./contacto.html"
+                       class="duration-500 text-offWhite hover:text-amber-400">Contáctanos</a>
                 </li>
             </ul>
-            <a href="#" class="laptop:hidden" title="hamburger"><i id="mobileMenu"
-                   class="tablet:text-3xl fas fa-bars text-offWhite"></i></a>
+
+            <div id="hamBtn"
+                 class="flex flex-row p-0 align-middle duration-300 rounded-sm cursor-pointer laptop:hidden right-3 top-6"
+                 title="mobile menu">
+                <i onclick="Open(this)" class="text-2xl tablet:text-3xl fas fa-bars text-offWhite"></i>
+            </div>
+
         </div>
     </nav>
     <!-- END REGULAR NAVBAR -->
@@ -156,6 +195,8 @@
         </div>
     </footer>
 
+    <!-- MOBILE MENU ACTIONS -->
+    <script src="js/mobile-menu.js"></script>
     <!-- INIT AOS -->
     <script>AOS.init();</script>
 </body>
